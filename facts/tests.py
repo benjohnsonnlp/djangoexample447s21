@@ -5,7 +5,7 @@ from facts.models import CatFact
 
 class FactTest(TestCase):
     def test_save(self):
-        self.assertEqual(1, 2, "Yup one is still equal to one")
+        self.assertEqual(1, 1, "Yup one is still equal to one")
         fact = CatFact(text="hi", image_url=".jpg")
         fact.save()
 
